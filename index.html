@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slo Price Bot</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Slo Price Bot</h1>
+    </div>
+
+    <div class=container>
+        <input type="text" id="eth-address-input" value="enter address here">
+        <p>Enter your eth address here</p>
+        <button type="button" id="update-collections-btn">Update Collections</button>
+        <p>Select this to pull collections from your eth address</p>
+
+        <hr>
+
+        <h2>Collections</h2>
+        <select name="collections" id="collection-1-select">
+
+        </select>
+        <select name="collections" id="collection-2-select">
+            
+        </select>
+        <select name="collections" id="collection-3-select">
+            
+        </select>
+        <select name="collections" id="collection-4-select">
+            
+        </select>
+        <select name="collections" id="collection-5-select">
+            
+        </select>
+
+        <hr>
+
+        <h2>Collection Prices</h2>
+        <button type="button" id="update-prices-btn">Update Prices</button>
+        <p>Update prices of selected questions</p>
+        <table id="price-table">
+
+            <tr id="table-header-row">
+                <th id="c0-header">-----</th>
+                <th id="c1-header">Collection 1</th>
+                <th id="c2-header">Collection 2</th>
+                <th id="c3-header">Collection 3</th>
+                <th id="c4-header">Collection 4</th>
+                <th id="c5-header">Collection 5</th>
+            </tr>
+            <tr>
+                <th id="price-header">Price</td>
+                <td id="c1-price">Price Here</td>
+                <td id="c2-price">Price Here</td>
+                <td id="c3-price">Price Here</td>
+                <td id="c4-price">Price Here</td>
+                <td id="c5-price">Price Here</td>
+            </tr>
+            <tr>
+                <th id="owners-header"># of Owners</td>
+                <td id="c1-owners"># of Owners</td>
+                <td id="c2-owners"># of Owners</td>
+                <td id="c3-owners"># of Owners</td>
+                <td id="c4-owners"># of Owners</td>
+                <td id="c5-owners"># of Owners</td>
+            </tr>
+            <tr>
+                <th id="one-day-sales-header">One Day Sales</td>
+                <td id="c1-one-day-sales">One Day Sales</td>
+                <td id="c2-one-day-sales">One Day Sales</td>
+                <td id="c3-one-day-sales">One Day Sales</td>
+                <td id="c4-one-day-sales">One Day Sales</td>
+                <td id="c5-one-day-sales">One Day Sales</td>
+            </tr>
+            <tr>
+                <th id="one-day-volume-header">One Day Sales Volumes</td>
+                <td id="c1-one-day-volume">One Day Sales Volumes</td>
+                <td id="c2-one-day-volume">One Day Sales Volumes</td>
+                <td id="c3-one-day-volume">One Day Sales Volumes</td>
+                <td id="c4-one-day-volume">One Day Sales Volumes</td>
+                <td id="c5-one-day-volume">One Day Sales Volumes</td>
+            </tr>
+
+        </table>
+        
+    </div>
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
